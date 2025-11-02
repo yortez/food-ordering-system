@@ -53,6 +53,8 @@ class ProductForm
                                 FileUpload::make('image')
                                     ->image()
                                     ->imageEditor()
+                                    ->disk('public')
+                                    ->directory('products')
                                     ->imageEditorMode(1),
                             ]),
                     ])->columnSpan(1),
@@ -70,7 +72,17 @@ class ProductForm
                                         $quantity = $get('quantity') ?? 0;
                                         $ingredientPrice = $state ? \App\Models\Ingredient::find($state)?->price ?? 0 : 0;
                                         $set('item_cost', $ingredientPrice * $quantity);
-                                    }),
+                                    })
+                                    ->createOptionForm([
+                                        TextInput::make('name')
+                                            ->required(),
+                                        Textarea::make('description')
+                                            ->columnSpanFull(),
+                                        TextInput::make('price')
+                                            ->required()
+                                            ->numeric()
+                                            ->prefix('₱'),
+                                    ]),
                                 TextInput::make('quantity')
                                     ->required()
                                     ->numeric()
