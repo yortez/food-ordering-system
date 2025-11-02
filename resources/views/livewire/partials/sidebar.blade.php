@@ -1,49 +1,31 @@
-<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="p-4 pt-5">
-		  		<a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/logo.jpg);"></a>
-	        <ul class="list-unstyled components mb-5">
-	          <li class="active">
-	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-	            <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                    <a href="#">Home 1</a>
-                </li>
-                <li>
-                    <a href="#">Home 2</a>
-                </li>
-                <li>
-                    <a href="#">Home 3</a>
-                </li>
-	            </ul>
-	          </li>
-	          <li>
-	              <a href="#">About</a>
-	          </li>
-	          <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-              </ul>
-	          </li>
-	          <li>
-              <a href="#">Portfolio</a>
-	          </li>
-	          <li>
-              <a href="#">Contact</a>
-	          </li>
-	        </ul>
-
-
-
-	      </div>
-    	</nav>
-
+<div class="h-screen grid grid-cols-[220px_1fr] gap-4 bg-gray-100 p-4">
+    <!-- Sidebar -->
+    <aside class="bg-white rounded-lg shadow p-4 flex flex-col justify-between">
+        <div>
+            <h2 class="text-xl font-bold mb-6 text-blue-600">POS Menu</h2>
+            <nav class="flex flex-col space-y-2">
+                <a href="/pos" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100 text-gray-700">
+                    <i class="fas fa-cash-register"></i>
+                    <span>POS</span>
+                </a>
+                <a href="{{ route('filament.admin.resources.orders.index') }}"
+                    class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100 text-gray-700">
+                    <i class="fas fa-list"></i>
+                    <span>Orders</span>
+                </a>
+                <a href="{{ route('filament.admin.resources.products.index') }}"
+                    class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100 text-gray-700">
+                    <i class="fas fa-box"></i>
+                    <span>Products</span>
+                </a>
+                <a href="{{ route('filament.admin.resources.guests.index') }}"
+                    class="flex items-center gap-2 px-3 py-2 rounded hover:bg-blue-100 text-gray-700">
+                    <i class="fas fa-user"></i>
+                    <span>Guests</span>
+                </a>
+            </nav>
+        </div>
+        <footer class="text-xs text-gray-400 mt-6">
+            <p>&copy; {{ date('Y') }} POS System</p>
+        </footer>
+    </aside>

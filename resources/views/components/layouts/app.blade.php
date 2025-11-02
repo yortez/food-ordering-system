@@ -13,7 +13,7 @@
 
 </head>
 <body class="bg-gray-100">
-      {{-- @livewire('partials.sidebar') --}}
+      @livewire('partials.sidebar')
     <main>
         {{ $slot }}
 
