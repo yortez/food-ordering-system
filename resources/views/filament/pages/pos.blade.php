@@ -1,3 +1,5 @@
 <x-filament-panels::page>
-    {{-- Page content --}}
+
+@livewire('home-page')
+
 </x-filament-panels::page>
