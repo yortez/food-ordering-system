@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\POSController;
 use App\Livewire\HomePage;
 use App\Livewire\POS;
+use App\Livewire\Auth\LoginPage;
+use App\Livewire\Auth\RegisterPage;
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,3 +32,7 @@ Route::get('/products/{category?}', [POSController::class, 'getProducts'])->name
 Route::post('/create-order', [POSController::class, 'createOrder'])->name('pos.create-order');
 Route::get('/pos/receipt/{order}', [POSController::class, 'printReceipt'])->name('pos.receipt');
 Route::get('/order-history', [POSController::class, 'getOrderHistory'])->name('pos.order-history');
+
+
+Route::get('/login', LoginPage::class);
+Route::get('/register', RegisterPage::class);
