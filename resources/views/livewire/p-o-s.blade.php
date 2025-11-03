@@ -1,9 +1,9 @@
-<div>
-
+    <main class="p-4 sm:ml-64">
+           <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
     <!-- Main POS Content -->
-    <div class="w-full grid grid-cols-[2fr_400px] gap-4">
+        <div class="grid gap-8 sm:grid-cols-1 lg:grid-cols-3 mb-8">
         <!-- Products Section -->
-        <div class="bg-white rounded-lg p-4 overflow-y-auto">
+        <div class="bg-white rounded-lg p-4 overflow-y-auto col-span-2">
             <h2 class="text-2xl font-bold mb-4">Products</h2>
 
             <!-- Category Tabs -->

@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/filament/filament/sidebar/style.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/filament/filament/sidebar/style.css') }}"> --}}
     @livewireStyles
 
 </head>
@@ -20,10 +20,6 @@
     </main>
     @livewireScripts
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="{{ asset('js/sidebar/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/sidebar/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/sidebar/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/sidebar/popper.js') }}"></script>
 </body>
 </html>
 

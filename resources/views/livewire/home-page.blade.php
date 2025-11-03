@@ -1,7 +1,9 @@
 
 
     <!-- Main Content -->
-    <main class="flex-1 p-6 overflow-y-auto">
+    <main class="p-4 sm:ml-64">
+           <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+
         <!-- Dashboard Cards -->
         <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 mb-8">
             <div class="bg-white rounded-lg p-8 shadow text-center hover:shadow-md transition">
@@ -90,24 +92,7 @@
         </div>
     </main>
 </div>
+</div>
 
-<!-- Mobile Sidebar Toggle Script -->
-<script>
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileSidebar = document.getElementById('mobileSidebar');
-    const closeBtn = document.getElementById('closeBtn');
 
-    menuBtn.addEventListener('click', () => {
-        mobileSidebar.classList.remove('hidden');
-    });
 
-    closeBtn.addEventListener('click', () => {
-        mobileSidebar.classList.add('hidden');
-    });
-
-    mobileSidebar.addEventListener('click', (e) => {
-        if (e.target === mobileSidebar) {
-            mobileSidebar.classList.add('hidden');
-        }
-    });
-</script>
