@@ -85,8 +85,8 @@
 
     <!-- Checkout Modal -->
     <div id="checkoutModal"
-        class="hidden fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
-        <div class="bg-white rounded-lg p-6 w-full max-w-md shadow-lg cursor-move relative transition-transform">
+        class="fixed inset-1  flex items-center justify-center z-50" style="display: none; scale: 0.8;">
+        <div class="modal-content bg-white rounded-lg p-6 w-full max-w-md shadow-lg cursor-move relative transition-transform">
             <h3 class="text-xl font-bold mb-4">Checkout</h3>
 
             <form id="checkoutForm">
