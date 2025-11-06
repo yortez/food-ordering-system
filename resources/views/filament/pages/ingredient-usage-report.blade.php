@@ -1,5 +1,3 @@
 <x-filament-panels::page>
-
-@livewire('home-page')
-
+    {{ $this->table }}
 </x-filament-panels::page>

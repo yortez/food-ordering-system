@@ -20,7 +20,7 @@ class IngredientResource extends Resource
 {
     protected static ?string $model = Ingredient::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::PuzzlePiece;
 
     protected static ?string $recordTitleAttribute = 'name';
 
